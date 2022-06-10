@@ -1,0 +1,377 @@
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+
+$base-color: #1f2138;
+$color: black;
+
+body{
+    background-color: $gray-200;
+    color: $color;
+}
+
+h6{
+    font-weight: 500;
+    color: $gray-700;
+}
+
+p{
+    font-weight: normal;
+    color: $gray-600;
+    margin-bottom: 0px;
+}
+
+span{
+    color: $gray-500;
+    font-size: small;
+}
+
+.pfp-container-post{
+    width: auto;
+}
+
+.account-name{
+    color: $gray-700;
+    line-height: 1;
+    &__container{
+        padding: 0px;
+        &-post{
+            width: auto;
+            align-self: center;
+        }
+    }
+}
+
+.profile-header{
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px 5px 20px 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+
+    &__avatar{
+        display: flex;
+        align-items: flex-end;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        background-image: url('https://images.unsplash.com/photo-1606247357835-d27fe83fc6a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        -moz-box-shadow: inset 0 -100px 100px -30px #000000;
+        -webkit-box-shadow: inset 0 -100px 100px -30px #000000;
+        box-shadow: inset 0 -100px 100px -30px #000000;
+    }
+
+    &-name{
+        color: white;
+        h5{
+            font-weight: lighter;
+        }
+    }
+}
+
+.profile-body{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.profile-text{
+    margin-bottom: 8px;
+}
+
+
+.container-card{
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 36px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+
+    &__row{
+        padding: 0px !important;
+    }
+
+    &-right{
+        background-color: white;
+        padding: 15px 0px;
+        border-radius: 5px;
+        margin-bottom: 36px;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+        padding-left: 25px;
+    }
+
+    &-left{
+        background-color: white;
+        padding: 25px;
+        border-radius: 5px;
+        margin-bottom: 36px;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+        padding-right: 35px;
+    }
+}
+
+.acc_row{
+    margin-top: 20px;
+}
+
+.tweet{
+    margin-top: 20px;
+}
+
+.acc-check-icon{
+    margin-left: 1px;
+}
+
+.tweet-content{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tweet-tags{
+    font-size: small;
+    color: $purple-500;
+    text-decoration: none;
+
+    width: 20%;
+    padding: 0px;
+    padding-left: 1rem;
+}
+
+.tweet-tags::before{
+    content: "#";
+    color : $purple-500;
+}
+
+
+.post-content{
+    margin-top: 20px;
+    padding-right: 20px;
+}
+
+.post-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+
+    margin-top: 20px;
+}
+
+.post-social-stats{
+    margin-top: 10px;
+    align-items: center;
+
+    &_liked-by{
+        display: flex;
+        margin: 0px;
+        align-items: center;
+
+        &__heart{
+            margin-right: 10px;
+        }
+
+        &__avatars{
+         justify-content: start;
+        }
+    }
+
+    &__comms-share{
+        display: flex;
+        margin: 0px;
+        justify-content: flex-end;
+    }
+}
+
+.comments{
+    margin-top: 20px;
+    &__comment{
+        margin-top: 20px;
+        &-content{
+            width: 75%;
+        }
+
+        &-like{
+            width: auto;
+        }
+    }
+}
+
+.post-comment-box{
+    margin-top: 20px;
+
+    &__btn{
+        margin-top: 20px;
+        padding-left: 16px;
+        padding-right: 16px;
+        background-color: $purple-500;
+        border: none;
+        line-height: normal;
+    }
+
+    &__btn:hover{
+        background-color: $purple-500;
+    }
+    
+    &__btn:active{
+        background-color: $purple-500;
+    }
+
+    &__btn:focus{
+        background-color: $purple-500;
+    }
+}
+
+.latest-photos-row{
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.latest-photos-col{
+    width: 64px;
+    height: 64px;
+}
+
+.latest-photos-photo{
+    width: 64px;
+    height: 64px;
+
+    border-radius: 5px;
+}
+
+.suggestions{
+
+    &__btn{
+        padding: 8px;
+        background-color: $purple-500;
+        border: none;
+        line-height: normal;
+    }
+
+    &__btn:hover{
+        background-color: $purple-500;
+    }
+    
+    &__btn:active{
+        background-color: $purple-500;
+    }
+
+    &__btn:focus{
+        background-color: $purple-500;
+    }
+}
+
+.polls{
+
+    &-progress{
+        height: 8px;
+        &__bar{
+            background-color: $purple-500;
+            border-radius: 4px;
+        }
+    }
+
+    &-checkrow{
+        padding: 8px;
+        align-items: center;
+
+        &-percentage{
+            text-align: end;
+            padding: 0px;
+        }
+    }
+
+    &-votedby{
+        margin-top: 8px;
+    }
+}
+
+.header{
+
+    &-bg{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &-img{
+        border-radius: 4px;
+        margin: 248px 32px -32px 32px;
+        width: 124px;
+        height: 124px;
+    }
+
+    &-button-row{
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    &__btn{
+        padding-left: 24px;
+        padding-right: 24px;
+        background-color: transparent;
+        color: $gray-700;
+        border: none;
+
+        &-active{
+            border: none;
+            background-color: $purple-500;
+            color:white;
+
+            padding-left: 24px;
+            padding-right: 24px;
+
+            &:hover{
+                background-color: $purple-500;
+                box-shadow: 0px 0px 20px 0px $purple-500;
+            }
+            
+            &:active{
+                background-color: $purple-500;
+            }
+        
+            &:focus{
+                background-color: $purple-500;
+            }
+        }
+
+        &-edit{
+            border: none;
+            background-color: $purple-500;
+            color:white;
+
+            padding-left: 24px;
+            padding-right: 24px;
+            float: right;
+
+            &__btn:hover{
+                background-color: $purple-500;
+            }
+            
+            &__btn:active{
+                background-color: $purple-500;
+            }
+        
+            &__btn:focus{
+                background-color: $purple-500;
+            }
+
+        }
+
+    }
+
+    &__btn:hover{
+        color: $gray-700;
+        background-color: transparent;
+    }
+    
+    &__btn:active{
+        color: $gray-700;
+        background-color: transparent;
+    }
+
+    &__btn:focus{
+        color: $gray-700;
+        background-color: transparent;
+    }
+
+    
+}
